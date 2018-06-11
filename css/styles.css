@@ -1,0 +1,70 @@
+//reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p
+{
+    margin: 0;
+    padding: 0;
+}
+#wrapper
+{
+    /* display: flex;
+     flex-wrap: wrap;*/
+}
+
+header
+{
+    background-color: #C8C6FA;
+}
+
+section.visual
+{
+    background-color: #5995DA;
+}
+
+section.coding
+{
+    background-color: #B2D6FF;
+}
+
+section.our-team
+{
+    background-color: #EAEDF0;
+}
+
+section.services
+{
+    background-color: #D6E9FE;
+}
+
+section.testimonial
+{
+    background-color: #F5CF8E;
+}
+
+section.panel-contact
+{
+    background-color: #F09A9D;
+}
+
+section.locations
+{
+    background-color: #C8C6FA;
+}
+
+footer
+{
+    background-color: brown;
+}
+
+
+
+
+
+
+
+
