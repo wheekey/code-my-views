@@ -1,20 +1,58 @@
 //reset
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+///////////////header
+header
+{
+    background-color: #C8C6FA;
+}
+
+.btn
+{
+    display: inline-block;
+    border-radius: 19px;
+    background-color: #96d019;
+    border-radius: 19px;
+    color: white;
+    font: 700 14px/18px GothamRounded,Arial,"Helvetica Neue",Helvetica,sans-serif;
+    padding: 13px 16px;
+    border-width: 4px;
+
+    -moz-transition: all .25s ease-in;
+    -o-transition: all .25s ease-in;
+    -webkit-transition: all .25s ease-in;
+    -ms-transform: all .25s ease-in;
+    transition: all .25s ease-in;
+}
+
+.btn:hover
+{
+    background-color: #75a214;
+    border-color: #6f9912;
+}
+.header-logo
+{
+    float: left;
+}
+#menu-header
+{
+  display: inline-block;
+}
+#menu-header>li
+{
+    float: left;
+}
+//////////////end header
 
 #wrapper
 {
     width: 100%;
-     display: flex;
-     flex-wrap: wrap;
-}
-
-header
-{
-    background-color: #C8C6FA;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 section.visual
@@ -69,16 +107,10 @@ footer
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  #wrapper {
-    width: 960px;
-    margin: 0 auto;
-  }
-
-    #wrapper > header, footer, div
-    {
-        width: 100%;
+    #wrapper {
+        width: 960px;
+        margin: 0 auto;
     }
-
 }
 
 
