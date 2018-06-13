@@ -1,24 +1,34 @@
+@font-face {
+    font-family: 'Archer'; /*a name to be used later*/
+    src: url('../fonts/Archer Semibold.otf'); /*URL to font*/
+    font-weight: 600;
+    font-style: normal
+}
+
 //reset
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    vertical-align:top;
+}
+
+a {
+    text-decoration: none;
 }
 
 ///////////////header
-header
-{
+header {
     background-color: #C8C6FA;
 }
 
-.btn
-{
+.btn {
     display: inline-block;
     border-radius: 19px;
     background-color: #96d019;
     border-radius: 19px;
     color: white;
-    font: 700 14px/18px GothamRounded,Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font: 700 14px/18px GothamRounded, Arial, "Helvetica Neue", Helvetica, sans-serif;
     padding: 13px 16px;
     border-width: 4px;
 
@@ -29,92 +39,90 @@ header
     transition: all .25s ease-in;
 }
 
-.btn:hover
-{
+.btn:hover {
     background-color: #75a214;
     border-color: #6f9912;
 }
-.header-logo
-{
-    float: left;
-}
-#menu-header
-{
-  display: inline-block;
-}
-#menu-header>li
-{
-    float: left;
-}
-//////////////end header
 
-#wrapper
-{
+.header-logo {
+    float: left;
+}
+
+.navbar-nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    font: 600 18px/22px Archer,serif;
+}
+
+.navbar-nav > li {
+    background-color: #75a214;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-nav > li > a:hover {
+    color: #1e6ab4;
+}
+
+.navbar-nav > li > a {
+    color: #000;
+}
+
+//////////////end header
+#wrapper {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-section.visual
-{
+section.visual {
     background-color: #5995DA;
 }
 
-section.coding
-{
+section.coding {
     background-color: #B2D6FF;
 }
 
-section.our-team
-{
+section.our-team {
     background-color: #EAEDF0;
 }
 
-section.services
-{
+section.services {
     background-color: #D6E9FE;
 }
 
-section.testimonial
-{
+section.testimonial {
     background-color: #F5CF8E;
 }
 
-section.panel-contact
-{
+section.panel-contact {
     background-color: #F09A9D;
 }
 
-section.locations
-{
+section.locations {
     background-color: #C8C6FA;
 }
 
-footer
-{
+footer {
     background-color: brown;
 }
 
-#main > section
-{
-
-}
+#main > section {}
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
 
-}
+@media only screen and (min-width: 401px) and (max-width: 960px) {}
 
 /* Desktop Styles */
+
 @media only screen and (min-width: 961px) {
     #wrapper {
         width: 960px;
         margin: 0 auto;
     }
 }
-
-
-
-
-
-
