@@ -7,6 +7,10 @@
     font-style: normal
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, blockquote, h1, h2, h3, h4, h5, h6 {
+    font-family: Archer,serif;
+}
+
 /*reset*/
 
 * {
@@ -23,8 +27,11 @@ a {
 /*header*/
 
 #header {
-    padding: 29px 0 25px;
+    padding: 29px 0 0;
+}
 
+#header .btn {
+    margin: -10px 0 0 36px;
 }
 
 .header-menu {
@@ -32,6 +39,9 @@ a {
 }
 
 .btn {
+    letter-spacing: 1px;
+    vertical-align: top;
+    text-transform: uppercase;
     display: inline-block;
     border-radius: 19px;
     background-color: #96d019;
@@ -99,7 +109,7 @@ a {
     color: #1e6ab4;
 }
 
-.navbar-nav>li>a:before {
+.navbar-nav > li > a:before {
     content: '';
     position: absolute;
 }
@@ -107,9 +117,22 @@ a {
 
 /*end header*/
 
+/*visual*/
+
 section.visual {
+    padding-top: 103px;
     background-color: #5995DA;
 }
+
+.visual h1 {
+    font-size: 90px;
+    line-height: 90px;
+    font-weight: 600;
+    margin-bottom: 23px;
+    font-style: italic;
+}
+
+/*end visual*/
 
 section.coding {
     background-color: #B2D6FF;
