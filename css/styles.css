@@ -7,18 +7,54 @@
     font-style: normal
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, blockquote, h1, h2, h3, h4, h5, h6 {
-    font-family: Archer,serif;
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../fonts/GothamRounded-Light.otf');
+    font-weight: 300;
+    font-style: normal
 }
 
-/*reset*/
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../fonts/GothamRounded-Book.otf');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../fonts/GothamRounded-Medium.otf');
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../fonts/GothamRounded-Bold.otf');
+    font-weight: 700;
+    font-style: normal
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     vertical-align: top;
+    font-size: 16px;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Archer, serif;
+}
+
+/*reset*/
+
+
 
 a {
     text-decoration: none;
@@ -62,6 +98,32 @@ a {
     background-color: #75a214;
     border-color: #6f9912;
 }
+
+.btn-default
+{
+        color: #112e4a;
+    background-color: rgba(0,0,0,0);
+    border-color: #768fa6;
+}
+
+.btn-default:hover
+{
+
+    color: #112e4a;
+    background-color: rgba(0,0,0,0);
+    border-color: #9eb0c0;
+}
+
+.btn-xl
+{
+    background-color: white;
+    border: 5px solid rgba(24, 64, 103, 0.26);
+    border-radius: 40px;
+    font-size: 18px;
+    text-transform: none;
+}
+
+
 
 .header-logo {
     float: left;
@@ -121,7 +183,7 @@ a {
 
 section.visual {
     padding-top: 103px;
-    background-color: #5995DA;
+
 }
 
 .visual h1 {
@@ -130,6 +192,21 @@ section.visual {
     font-weight: 600;
     margin-bottom: 23px;
     font-style: italic;
+}
+
+.visual h2 {
+    /* Text style for "Brought to LIF" */
+    color: #1e6ab4;
+    font-family: GothamRounded;
+    font-size: 41px;
+    font-weight: 300;
+    line-height: 64px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+
+.visual p {
+    font-family: GothamRounded, Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /*end visual*/
