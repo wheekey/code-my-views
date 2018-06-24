@@ -41,6 +41,7 @@
     box-sizing: border-box;
     vertical-align: top;
     font-size: 16px;
+
 }
 
 h1,
@@ -54,8 +55,6 @@ h6 {
 
 /*reset*/
 
-
-
 a {
     text-decoration: none;
 }
@@ -64,6 +63,7 @@ a {
 
 #header {
     padding: 29px 0 0;
+
 }
 
 #header .btn {
@@ -99,30 +99,26 @@ a {
     border-color: #6f9912;
 }
 
-.btn-default
-{
-        color: #112e4a;
-    background-color: rgba(0,0,0,0);
+.btn-default {
+    color: #112e4a;
+    background-color: rgba(0, 0, 0, 0);
     border-color: #768fa6;
 }
 
-.btn-default:hover
-{
+.btn-default:hover {
 
     color: #112e4a;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     border-color: #9eb0c0;
 }
 
-.btn-xl
-{
+.btn-xl {
     background-color: white;
     border: 5px solid rgba(24, 64, 103, 0.26);
     border-radius: 40px;
     font-size: 18px;
     text-transform: none;
 }
-
 
 
 .header-logo {
@@ -181,9 +177,26 @@ a {
 
 /*visual*/
 
-section.visual {
+.visual {
     padding-top: 103px;
+    position: relative;
 
+}
+
+.visual:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 1630px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../images/bg-visual.svg) 0 0/100% auto no-repeat;
+    z-index: 1;
 }
 
 .visual h1 {
@@ -207,37 +220,125 @@ section.visual {
 
 .visual p {
     font-family: GothamRounded, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: 46px;
+    max-width: 571px;
+    line-height: 1.6;
+}
+
+.visual .btn:after {
+    height: 0;
+    width: 0;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #1e6ab4;
+    border-top: 6px solid transparent;
+    border-width: 5px 0 5px 6px;
+    content: '';
+    display: inline-block;
+    margin-left: 12px;
 }
 
 /*end visual*/
 
-section.coding {
+/*coding*/
+
+.coding {
     background-color: #B2D6FF;
+    padding-top: 70px;
 }
 
-section.our-team {
+.coding h2 {
+    font-family: Archer;
+    font-size: 42px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+}
+
+.coding h3 {
+    color: #1e6ab4;
+    font-family: GothamRounded;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 58px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.coding .step {
+    color: #1e6ab4;
+    font-family: GothamRounded;
+    font-size: 14px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.coding h4 {
+    font-family: Archer;
+    font-size: 31px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 38px;
+}
+
+.coding p {
+    color: black;
+    font-family: Gotham;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+/*end coding*/
+
+/*our-team*/
+
+.our-team {
     background-color: #EAEDF0;
 }
 
-section.services {
+/*end our-team*/
+
+/*services*/
+
+.services {
     background-color: #D6E9FE;
 }
 
-section.testimonial {
+/*end services*/
+
+/*testimonial*/
+
+.testimonial {
     background-color: #F5CF8E;
 }
 
-section.panel-contact {
+/*end testimonial*/
+
+/*panel-contact*/
+
+.panel-contact {
     background-color: #F09A9D;
 }
 
-section.locations {
+/*end panel-contact*/
+
+/*locations*/
+
+.locations {
     background-color: #C8C6FA;
 }
+
+/*end locations*/
+
+/*footer*/
 
 footer {
     background-color: brown;
 }
+
+/*end footer*/
 
 #main > section {}
 
@@ -248,7 +349,9 @@ footer {
 /* Desktop Styles */
 
 @media only screen and (min-width: 1241px) {
-    #wrapper {
+    #wrapper {}
+
+    .container {
         width: 1244px;
         margin: 0 auto;
     }
