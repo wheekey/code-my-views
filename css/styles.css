@@ -242,9 +242,75 @@ a {
 /*coding*/
 
 .coding {
-    background-color: #B2D6FF;
-    padding-top: 70px;
+
+        position: relative;
 }
+
+.coding:before
+{
+    background: url(../images/bg-gallery-area.jpg) #eaeff8;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -500px;
+    right: -500px;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(-3.3deg);
+}
+
+.coding:after
+{
+    content: '';
+    position: absolute;
+    bottom: -54px;
+    left: 50%;
+    margin-left: -758px;
+    width: 567px;
+    height: 130px;
+        background: url(../images/forest.png) 0 0/100% auto no-repeat;
+}
+
+.coding .step-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.coding {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coding .step-info {
+    margin-left: 50px;
+    flex: 1;
+}
+
+.coding .step-info h4 {
+    font-family: Archer;
+    font-size: 31px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 38px;
+    max-width: 60%;
+    margin-top: 20px;
+}
+
+.coding .step-info p {
+    padding-top: 20px;
+    color: black;
+    font-family: Gotham;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.coding .step-img {
+    flex: 2;
+}
+
 
 .coding h2 {
     font-family: Archer;
