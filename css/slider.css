@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100);
+
+
+
+.slider {
+    overflow: hidden;
+}
+
+.holder {
+    width: 500%;
+}
+
+.slide {
+    float: left;
+    width: 20%;
+
+    position: relative;
+
+}
+
+
+
+

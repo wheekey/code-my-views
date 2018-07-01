@@ -243,11 +243,10 @@ a {
 
 .coding {
 
-        position: relative;
+    position: relative;
 }
 
-.coding:before
-{
+.coding:before {
     background: url(../images/bg-gallery-area.jpg) #eaeff8;
     content: '';
     position: absolute;
@@ -259,8 +258,7 @@ a {
     transform: rotate(-3.3deg);
 }
 
-.coding:after
-{
+.coding:after {
     content: '';
     position: absolute;
     bottom: -54px;
@@ -268,7 +266,7 @@ a {
     margin-left: -758px;
     width: 567px;
     height: 130px;
-        background: url(../images/forest.png) 0 0/100% auto no-repeat;
+    background: url(../images/forest.png) 0 0/100% auto no-repeat;
 }
 
 .coding .step-block {
@@ -354,6 +352,52 @@ a {
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
+}
+
+.coding .slider-wrap {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.coding .slider-nav {
+    font-family: Gotham;
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.coding .slider-nav a {
+    color: #75777c;
+}
+
+.coding .slider-nav a.active {
+    color: black;
+}
+
+.coding .slider-nav li {
+    display: inline-block;
+}
+
+.coding .slider-nav li a:before
+{
+    content: '';
+    position: absolute;
+}
+
+
+.coding .slider-nav li a:hover:before {
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 2px;
+    background: rgba(0, 0, 0, .2);
+
 }
 
 /*end coding*/

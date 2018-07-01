@@ -2,11 +2,19 @@
 <html lang="en">
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
     <link rel="stylesheet" href="css/reset.css">
+
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slider.css">
 </head>
 
 <body>
+
+
     <div id="wrapper">
         <header id="header" class="navbar">
             <div class="container">
@@ -42,25 +50,95 @@
             </section>
             <section class="coding">
                 <div class="container">
-                    <h2>Focus on the Design</h2>
-                    <h3>Coding is Easy</h3>
-                    <div class="step-block">
-                        <div class="step-info">
-                            <div class="step">step 1</div>
-                            <h4>First, We Receive the Initial File</h4>
-                            <p>Aenean finibus ut mi ut hendrerit. Cras consectetur blandit condimentum. Ut non congue diam. Nulla eu leo eleifend, sollicitudin nibh ac, feugiat sem. Integer eu tortor at massa vestibulum tempor. </p>
+                    <div class="slider-wrap">
+                        <div class="slider" id="slider">
+                            <div class="holder">
+                                <div class="slide" id="slide-0">
+                                    <h2>Focus on the Design</h2>
+                                    <h3>Coding is Easy</h3>
+                                    <div class="step-block">
+                                        <div class="step-info">
+                                            <div class="step">step 1</div>
+                                            <h4>First, We Receive the Initial File</h4>
+                                            <p>Aenean finibus ut mi ut hendrerit. Cras consectetur blandit condimentum. Ut non congue diam. Nulla eu leo eleifend, sollicitudin nibh ac, feugiat sem. Integer eu tortor at massa vestibulum tempor. </p>
+                                        </div>
+                                        <div class="step-img">
+                                            <img src="images/step-img.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide" id="slide-1">
+                                    <h2>Focus on the Design</h2>
+                                    <h3>Coding is Easy</h3>
+                                    <div class="step-block">
+                                        <div class="step-info">
+                                            <div class="step">step 1</div>
+                                            <h4>Fm,/m,/r at massa vestibulum tempor. </p>
+                                        </div>
+                                        <div class="step-img">
+                                            <img src="images/step-img.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide" id="slide-2">
+                                    <h2>Focus on the Design</h2>
+                                    <h3>Coding is Easy</h3>
+                                    <div class="step-block">
+                                        <div class="step-info">
+                                            <div class="step">step 1</div>
+                                            <h4>ddditial File</h4>
+                                            <p>Aenean finibus ut mi ut hendrerit. Cras consectetur blandit condimentum. Ut non congue diam. Nulla eu leo eleifend, sollicitudin nibh ac, feugiat sem. Integer eu tortor at massa vestibulum tempor. </p>
+                                        </div>
+                                        <div class="step-img">
+                                            <img src="images/step-img.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide" id="slide-3">
+                                    <h2>Focus on the Design</h2>
+                                    <h3>Coding is Easy</h3>
+                                    <div class="step-block">
+                                        <div class="step-info">
+                                            <div class="step">step 1</div>
+                                            <h4>FirsdfhInitial File</h4>
+                                            <p>Aenean finibus ut mi ut hendrerit. Cras consectetur blandit condimentum. Ut non congue diam. Nulla eu leo eleifend, sollicitudin nibh ac, feugiat sem. Integer eu tortor at massa vestibulum tempor. </p>
+                                        </div>
+                                        <div class="step-img">
+                                            <img src="images/step-img.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide" id="slide-4">
+                                    <h2>Focus on the Design</h2>
+                                    <h3>Coding is Easy</h3>
+                                    <div class="step-block">
+                                        <div class="step-info">
+                                            <div class="step">step 1</div>
+                                            <h4>Fdfhthe Initial File</h4>
+                                            <p>Aenean finibus ut mi ut hendrerit. Cras consectetur blandit condimentum. Ut non congue diam. Nulla eu leo eleifend, sollicitudin nibh ac, feugiat sem. Integer eu tortor at massa vestibulum tempor. </p>
+                                        </div>
+                                        <div class="step-img">
+                                            <img src="images/step-img.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="step-img">
-                            <img src="images/step-img.png" alt="">
-                        </div>
+                        <nav class="slider-nav">
+                            <ul>
+                                <li><a href="#slide-0" class="active">Receive Designs</a></li>
+                                <li><a href="#slide-1">Approve Quote</a></li>
+                                <li><a href="#slide-2">Production</a></li>
+                                <li><a href="#slide-3">QA</a></li>
+                                <li><a href="#slide-4">Review</a></li>
+                            </ul>
+                        </nav>
                     </div>
-
-
                 </div>
             </section>
             <section class="our-team">
                 <div class="container">
-                    <h2>Focus on the Design</h2>
+                    <h2>Our Team is the</h2>
                     <h3>Real Deal</h3>
                     <p>
                         We started this company with one simple goal, develop high-quality web sites for small teams and freelancers, just like us. Also, don’t suck. Be awesome.
@@ -253,6 +331,9 @@
             </div>
         </footer>
     </div>
+    <script src="js/slider.js">
+    </script>
+
 
 </body>
 
