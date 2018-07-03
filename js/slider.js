@@ -6,7 +6,9 @@ var slider = {
     slider: $("#slider"),
     allSlides: $(".slide"),
     sliderNav: $(".slider-nav"),
-    allNavButtons: $(".slider-nav li > a")
+    allNavButtons: $(".slider-nav li > a"),
+    pointsDiv: $(".slider-nav .points"),
+    points: $(".slider-nav .points > a")
   },
 
   timing: 800,
@@ -25,6 +27,10 @@ var slider = {
     });
     // ... or click a thing
     this.el.sliderNav.on("click", "a", function(event) {
+      slider.handleNavClick(event, this);
+    });
+
+    this.el.pointsDiv.on("click", "a", function(event) {
       slider.handleNavClick(event, this);
     });
     // What would be cool is if it had touch
@@ -48,6 +54,7 @@ var slider = {
     }, this.timing);
 
     this.changeActiveNav(el);
+
   },
 
   changeActiveNav: function(el) {

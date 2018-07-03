@@ -251,22 +251,23 @@ a {
     content: '';
     position: absolute;
     top: 0;
-    left: -500px;
-    right: -500px;
+    /*left: -500px;
+    right: -500px;*/
     bottom: 0;
     z-index: -1;
-    transform: rotate(-3.3deg);
+    width: 100%;
+    /*transform: rotate(-3.3deg);*/
 }
 
 .coding:after {
-    content: '';
+   /* content: '';
     position: absolute;
     bottom: -54px;
     left: 50%;
     margin-left: -758px;
     width: 567px;
     height: 130px;
-    background: url(../images/forest.png) 0 0/100% auto no-repeat;
+    background: url(../images/forest.png) 0 0/100% auto no-repeat;*/
 }
 
 .coding .step-block {
@@ -359,45 +360,83 @@ a {
     padding-bottom: 100px;
 }
 
+
 .coding .slider-nav {
+    width: 80%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.coding  .points
+{
+    text-align: center;
+    margin-top: 65px;
+}
+
+
+.coding .points a {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #ddd;
+    overflow: hidden;
+    text-indent: -9999px;
+    border-radius: 50%;
+}
+
+.coding .slider-nav .points a.active {
+  background: #999;
+}
+
+.coding .slider-nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
     font-family: Gotham;
     font-size: 14px;
     font-weight: 700;
-    position: absolute;
-    top: 70%;
-    left: 50%;
     border-top: 1px solid rgba(0, 0, 0, .2);
-    padding-top: 20px;
     text-transform: uppercase;
     text-align: center;
+    margin-top: -3px;
 }
 
-.coding .slider-nav a {
+.coding .slider-nav ul li a {
     color: #75777c;
+    display: block;
+    position: relative;
+    padding: 20px 0 0;
 }
+
+
 
 .coding .slider-nav a.active {
     color: black;
 }
 
-.coding .slider-nav li {
-    display: inline-block;
-}
-
-.coding .slider-nav li a:before
-{
+.coding .slider-nav li a:before {
     content: '';
     position: absolute;
 }
 
+.coding .slider-nav li {
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    background: url('../images/divider.png') no-repeat center top;
 
-.coding .slider-nav li a:hover:before {
+}
+
+.coding .slider-nav li a.active:before {
     left: 0;
     right: 0;
-    top: 0;
+    top: -3px;
     height: 2px;
     background: rgba(0, 0, 0, .2);
-
 }
 
 /*end coding*/
@@ -465,4 +504,5 @@ footer {
         width: 1244px;
         margin: 0 auto;
     }
+    0px
 }
