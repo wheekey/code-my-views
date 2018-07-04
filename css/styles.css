@@ -387,7 +387,7 @@ a {
     border-radius: 50%;
 }
 
-.coding .slider-nav .points a.active {
+.coding  .points a.active {
   background: #999;
 }
 
