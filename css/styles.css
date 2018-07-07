@@ -439,8 +439,12 @@ a {
 /*our-team*/
 
 .our-team {
-    background-color: mediumvioletred;
     padding-top: 100px;
+}
+
+.our-team .info {
+    max-width: 50%;
+
 }
 
 .our-team h2 {
@@ -454,11 +458,36 @@ a {
 
 .our-team h3 {
     color: #a3cd49;
-    font-family: GothamRounded, Arial, "Helvetica Neue", Helvetica, sans-serif;;
+    font-family: GothamRounded, Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 48px;
     font-weight: 300;
     line-height: 80px;
     text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.our-team p {
+    opacity: 0.7;
+    color: black;
+    font-family: Gotham;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-right: 180px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.our-team h4 {
+    padding-top: 40px;
+
+    color: black;
+    font-family: GothamRounded;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    max-width: 35%;
 }
 
 /*end our-team*/
