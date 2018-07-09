@@ -35,6 +35,13 @@
     font-style: normal
 }
 
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../fonts/Metropolis-Bold.otf');
+    font-weight: 700;
+    font-style: normal
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -440,11 +447,17 @@ a {
 
 .our-team {
     padding-top: 100px;
+
 }
 
-.our-team .info {
-    max-width: 50%;
+.our-team .img
+{
 
+}
+
+.our-team .info, .our-team .img {
+    width: 50%;
+    float: left;
 }
 
 .our-team h2 {
@@ -473,14 +486,14 @@ a {
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
-    margin-right: 180px;
     padding-bottom: 40px;
     border-bottom: 1px solid #cccccc;
+    margin-right: 80px;
+
 }
 
 .our-team h4 {
     padding-top: 40px;
-
     color: black;
     font-family: GothamRounded;
     font-size: 14px;
@@ -488,6 +501,51 @@ a {
     line-height: 22px;
     text-transform: uppercase;
     max-width: 35%;
+}
+
+.our-team .team-members {
+    font-family: Metropolis;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.our-team .team-members .item {
+    flex-basis: 50%;
+    margin-top: 40px;
+    position: relative;
+}
+
+.our-team .member-info
+{
+
+     position:absolute; top:30%;
+    left: 30%;
+
+}
+
+.our-team .member-info span
+{
+   display: block;
+}
+
+
+.our-team .team-members img {
+
+
+}
+
+.our-team .team-members .name {
+    color: black;
+    text-transform: uppercase;
+}
+
+.our-team .team-members .specialty {
+    color: #1971c8;
 }
 
 /*end our-team*/
